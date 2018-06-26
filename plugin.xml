@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-java8"
+        version="1.0.0">
+    <name>Cordova Java 8</name>
+    <author href="">Phan Tuấn Vũ</author>
+    <description>
+        This plugin attempts to convince Cordova to compile against Java 8 instead of Java 6 on Java platforms
+    </description>
+    <repo>https://github.com/ptuanvu/cordova-java-8.git</repo>
+    <issue>https://github.com/ptuanvu/cordova-java-8/issues</issue>
+    <license>MIT</license>
+    <keywords>cordova, java 8</keywords>
+    <platform name="android">
+        <source-file src="build-extras.gradle" target-dir="../android" />
+    </platform>
+    <platform name="amazon-fireos">
+        <source-file src="build-extras.gradle" target-dir="../amazon-fireos" />
+    </platform>
+</plugin>
